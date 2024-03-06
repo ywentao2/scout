@@ -1,13 +1,104 @@
-body {
+/* Add a black background color to the top navigation */
+body,
+html {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.topnav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: #333;
+  overflow: hidden;
+  display: flex;
+  justify-content: start; /* Aligns items to the start, making room for the image on the left */
+  align-items: center;
+  padding: 0px 10px;
+}
+
+/* Style the image inside the navigation bar */
+.topnav img {
+  padding-left: 10px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Other styles remain unchanged */
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+/* Container for the links to center them */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1; /* Makes the div grow to fill available space, pushing the image to the left */
+}
+
+.mid_align{
+  display: flex; /* Changed from grid to flex */ /* Align items to the start */
+  align-items: center; /* Center items vertically */
+  justify-content: space-between;
+  padding-left: 20px; /* Added padding to the left */
+  height: 100vh; /* Keeps vertical centering */
+}
+
+.img1{
+  justify-content: left;
+  margin-left: 20vh;
+  width: 60vh;
+  height: 60vh;  
+  box-shadow:rgba(0,0,0,1);
+  /*float: right*/
+}
+
+.right_card{
+  background-color: #333; /* Light grey background */
+  margin-left: 20px; /* Space between the image and the card */
+  margin-right: 20vh;
+  padding: 20px; /* Padding inside the card */
+  width: 400px; /* Card width */
+  height: 700px; /* Card height, to match the image */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Adds shadow for depth */
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  align-items: start;
+  text-align: center;
+  border-radius: 25px; /* Rounded corners */
+}
+
+
+
+input{
+  background-color: #04aa6d; /* Green background */
+  border-radius: 50%;
+  margin-top: 2vh;
+  padding: 0.5vh;
+  cursor: pointer;
+
+}
+
+input:hover{
+  background-color: #ffffff; /* Light grey background on hover */
+  color: black;
 }
