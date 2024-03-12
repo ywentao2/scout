@@ -1,3 +1,9 @@
+@import url('https://fonts.cdnfonts.com/css/agency-fb');
+*{
+  font-family: 'Agency FB', sans-serif;
+  color: white
+}
+
 /* Add a black background color to the top navigation */
 body,
 html {
@@ -64,8 +70,8 @@ html {
 
 .img1{
   justify-content: left;
-  margin-left: 20vh;
-  width: 60vh;
+  margin-left: 10vh;
+  width: 80vh;
   height: 60vh;  
   box-shadow:rgba(0,0,0,1);
   /*float: right*/
@@ -73,32 +79,50 @@ html {
 
 .right_card{
   background-color: #333; /* Light grey background */
-  margin-left: 20px; /* Space between the image and the card */
-  margin-right: 20vh;
-  padding: 20px; /* Padding inside the card */
+  margin-left: 20vh; /* Space between the image and the card */
+  margin-right: 15vh;
+  padding: 20px; 
   width: 400px; /* Card width */
   height: 700px; /* Card height, to match the image */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Adds shadow for depth */
   display: flex;
-  justify-content: center;
-  justify-content: space-evenly;
-  align-items: start;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
   text-align: center;
   border-radius: 25px; /* Rounded corners */
+  position: relative;
 }
 
 
 
+.inputs{
+  display: flex;
+  justify-content: space-evenly;
+}
+
 input{
+  display: flex;
+  margin-left: 2vh;
   background-color: #04aa6d; /* Green background */
   border-radius: 50%;
   margin-top: 2vh;
   padding: 0.5vh;
   cursor: pointer;
-
 }
 
 input:hover{
   background-color: #ffffff; /* Light grey background on hover */
   color: black;
+}
+
+.text{
+  align-self: flex-start;
+}
+
+.back{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 10px;
 }
