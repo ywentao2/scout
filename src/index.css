@@ -31,9 +31,10 @@ html {
 
 /* Style the links inside the navigation bar */
 .topnav a {
+  display: inline-block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 7px 16px;
   text-decoration: none;
   font-size: 17px;
 }
@@ -43,6 +44,7 @@ html {
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #ddd;
+  border-color: #ddd;
   color: black;
 }
 
@@ -50,6 +52,12 @@ html {
 .topnav a.active {
   background-color: #04aa6d;
   color: white;
+}
+
+.topnav a.active:hover {
+  background-color: #ddd;
+  color: black;
+  border-color: #ddd; /* Add this line */
 }
 
 /* Container for the links to center them */
@@ -81,8 +89,8 @@ html {
   background-color: #333; /* Light grey background */
   margin-left: 20vh; /* Space between the image and the card */
   margin-right: 15vh;
-  padding: 20px; 
-  width: 400px; /* Card width */
+  padding: 20px 2vh; 
+  width: 30%; /* Card width */
   height: 700px; /* Card height, to match the image */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Adds shadow for depth */
   display: flex;
@@ -92,6 +100,7 @@ html {
   text-align: center;
   border-radius: 25px; /* Rounded corners */
   position: relative;
+  overflow: hidden;
 }
 
 
@@ -116,8 +125,18 @@ input:hover{
   color: black;
 }
 
-.text{
+.title{
+  align-items: center;
+}
+
+.bodyText{
+  text-align: left;
   align-self: flex-start;
+  margin: 0px 0vh 0px 1vh;
+  text-indent: 2vh;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  width: calc(100% - 1vh);
 }
 
 .back{

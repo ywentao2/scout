@@ -1,6 +1,7 @@
 import * as React from "react";
 import "./App.css";
 import LearnMore from "./LearnMore";
+import Contact from "./contact"
 import logo from "./logo.png";
 import robot from "./robot.jpeg";
 import placeholder_128 from "./128x128placeholder.png";
@@ -14,19 +15,15 @@ import shooter_close from "./shooter_close.png";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import {Link} from "react-router-dom";
 
-function App() {
+function HomePage() {
   const reader = new FileReader();
-  const roboTitle = ["popping", "eating", "pooping", "crying"];
-  const roboText = ["pop", "eat", "poop", "cry"];
+  const roboTitle = ["The 2024 Robot: Lyra", "The Climber", "The Intake", "The Shooter"];
+  const roboText = ["pop", "eat", "poop", "cryhhhhhhhhhhhhrhhrhrhhrhhrhrhhrhhrhhrhrhrhrhhrjrjrjrjjrjjrjjrjjjrjrjhrhhrrh"];
   const [robotImage, setRobotImage] = React.useState(robot);
-  const [robotText, setRobotText] = React.useState(roboTitle[0]);
-  const [robotTitle, setRobotTitle] = React.useState(roboText[0]);
+  const [robotText, setRobotText] = React.useState(roboText[0]);
+  const [robotTitle, setRobotTitle] = React.useState(roboTitle[0]);
 
   return (
-    <Router>
-      <Routes>
-        <Route path="/learnMore" element={<LearnMore />} />
-      </Routes>
       <div className="App">
         <head>
           <link rel="icon" href="favicon.jpg"></link>
@@ -34,13 +31,9 @@ function App() {
         <div className="topnav">
           <img src={logo} alt="p" />
           <div className="nav-links">
-            <a className="active" href="#home">
-              Home
-            </a>
-            <Link to="/learnMore">
-              <a href="#more">Learn More</a>
-            </Link>
-            <a href="#contact">Contact</a>
+            <a className="active"><Link to="">Home</Link></a>
+            {/* <a><Link to="/learnMore">Learn More</Link></a> */}
+            {/* <a><Link to="/contact">Contact</Link></a> */}
           </div>
         </div>
         <div className="mid_align">
@@ -50,7 +43,7 @@ function App() {
               <input
                 type="image"
                 src={climber_close}
-                alt="climber button"
+                alt="The Climber"
                 onClick={() => {
                   setRobotImage(climber);
                   setRobotTitle(roboTitle[1]);
@@ -60,7 +53,7 @@ function App() {
               <input
                 type="image"
                 src={intake_close}
-                alt="intake button"
+                alt="The Intake"
                 onClick={() => {
                   setRobotImage(intake);
                   setRobotTitle(roboTitle[2]);
@@ -70,7 +63,7 @@ function App() {
               <input
                 type="image"
                 src={shooter_close}
-                alt="shooter button"
+                alt="The Shooter"
                 onClick={() => {
                   setRobotImage(shooter);
                   setRobotTitle(roboTitle[3]);
@@ -78,8 +71,10 @@ function App() {
                 }}
               />
             </div>
-            <div className="text">
+            <div className="title">
               <h1>{robotTitle}</h1>
+            </div>
+            <div className="bodyText">
               <p>{robotText}</p>
             </div>
             <input
@@ -96,7 +91,19 @@ function App() {
           </div>
         </div>
       </div>
-    </Router>
+  );
+}
+
+function App(){
+  return(
+  <Router>
+      <Routes>
+        <Route path="/learnMore" element={<LearnMore />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<HomePage />} />
+      </Routes>
+  </Router>
   );
 }
 
