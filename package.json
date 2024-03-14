@@ -1,7 +1,7 @@
 {
   "name": "scout",
   "version": "0.1.0",
-  "homepage": "ywentao2.github.io/scout",
+  "homepage": "ywentao2.github.io/scout/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
