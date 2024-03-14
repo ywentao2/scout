@@ -12,7 +12,7 @@ import climber from "./climber.jpeg";
 import climber_close from "./climber_close.png";
 import intake_close from "./intake_close.png";
 import shooter_close from "./shooter_close.png";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 function HomePage() {
@@ -71,6 +71,7 @@ function HomePage() {
                 handleOnClick(climber, roboTitle[1], roboText[1], "climber");
               }}
             />
+
             <input
               type="image"
               src={intake_close}

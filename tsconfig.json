@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "module": "commonjs",
-        "outDir": "dist",
+        "outDir": "dist", // Change the output directory to a different location
         "rootDir": "src",
         "noImplicitAny": true,
         "sourceMap": true,
