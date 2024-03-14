@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "./static/css/main.9a65651b.css",
-    "main.js": "./static/js/main.d75feaa7.js",
-    "static/js/453.185d866e.chunk.js": "./static/js/453.185d866e.chunk.js",
-    "static/media/robot.jpeg": "./static/media/robot.b541fb18855d1ccb11a9.jpeg",
-    "static/media/shooter.png": "./static/media/shooter.999bd9c35bb2e7632b05.png",
-    "static/media/intake.jpeg": "./static/media/intake.350dde8abcd6c410817e.jpeg",
-    "static/media/climber.jpeg": "./static/media/climber.031aac81e8b426982102.jpeg",
-    "index.html": "./index.html",
-    "main.9a65651b.css.map": "./static/css/main.9a65651b.css.map",
-    "main.d75feaa7.js.map": "./static/js/main.d75feaa7.js.map",
-    "453.185d866e.chunk.js.map": "./static/js/453.185d866e.chunk.js.map"
+    "main.css": "/ywentao2.github.io/scout/static/css/main.9a65651b.css",
+    "main.js": "/ywentao2.github.io/scout/static/js/main.27af809d.js",
+    "static/js/453.185d866e.chunk.js": "/ywentao2.github.io/scout/static/js/453.185d866e.chunk.js",
+    "static/media/robot.jpeg": "/ywentao2.github.io/scout/static/media/robot.b541fb18855d1ccb11a9.jpeg",
+    "static/media/shooter.png": "/ywentao2.github.io/scout/static/media/shooter.999bd9c35bb2e7632b05.png",
+    "static/media/intake.jpeg": "/ywentao2.github.io/scout/static/media/intake.350dde8abcd6c410817e.jpeg",
+    "static/media/climber.jpeg": "/ywentao2.github.io/scout/static/media/climber.031aac81e8b426982102.jpeg",
+    "index.html": "/ywentao2.github.io/scout/index.html",
+    "main.9a65651b.css.map": "/ywentao2.github.io/scout/static/css/main.9a65651b.css.map",
+    "main.27af809d.js.map": "/ywentao2.github.io/scout/static/js/main.27af809d.js.map",
+    "453.185d866e.chunk.js.map": "/ywentao2.github.io/scout/static/js/453.185d866e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9a65651b.css",
-    "static/js/main.d75feaa7.js"
+    "static/js/main.27af809d.js"
   ]
 }
