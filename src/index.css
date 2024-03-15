@@ -174,10 +174,12 @@ input:hover{
   }
   .mid_align{
     flex-direction: column;
+    align-items: center;
   }
   .right_card{
     flex-direction: column;
-    width: 80%;
+    align-self: center;
+    width: 100%;
     overflow: auto;
     min-height: 85%;
   }
