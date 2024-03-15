@@ -30,18 +30,15 @@ function HomePage() {
     "cry",
   ];
   const [robotImage, setRobotImage] = React.useState(robot);
-  const [robotText, setRobotText] = React.useState(roboText[0]);
   const [robotTitle, setRobotTitle] = React.useState(roboTitle[0]);
   const [buttonPressed, setButtonPressed] = React.useState("");
   const handleOnClick = (
     image: string,
     title: string,
-    text: string,
     button: string
   ): void => {
     setRobotImage(image);
     setRobotTitle(title);
-    setRobotText(text);
     setButtonPressed(button);
   };
 
@@ -72,7 +69,7 @@ function HomePage() {
                 // setRobotImage(climber);
                 // setRobotTitle(roboTitle[1]);
                 // setRobotText(roboText[1]);
-                handleOnClick(climber, roboTitle[1], roboText[1], "climber");
+                handleOnClick(climber, roboTitle[1], "climber");
               }}
             />
 
@@ -84,7 +81,7 @@ function HomePage() {
                 // setRobotImage(intake);
                 // setRobotTitle(roboTitle[2]);
                 // setRobotText(roboText[2]);
-                handleOnClick(intake, roboTitle[2], roboText[2], "intake");
+                handleOnClick(intake, roboTitle[2], "intake");
               }}
             />
             <input
@@ -95,7 +92,7 @@ function HomePage() {
                 // setRobotImage(shooter);
                 // setRobotTitle(roboTitle[3]);
                 // setRobotText(roboText[3]);
-                handleOnClick(shooter, roboTitle[3], roboText[3], "shooter");
+                handleOnClick(shooter, roboTitle[3], "shooter");
               }}
             />
           </div>
@@ -125,7 +122,7 @@ function HomePage() {
                 <h1>{roboTitle[3]}</h1>
               </div>
               <div className="bodyText">
-                <p>{roboText[3]}</p>
+                <p></p>
               </div>
             </>
           )}
@@ -135,7 +132,21 @@ function HomePage() {
                 <h1>{roboTitle[0]}</h1>
               </div>
               <div className="bodyText">
-                <p>{roboText[0]}</p>
+              <h1>General</h1>
+                <p>Our beautiful beast, Lyra, weighs at 124.27 lbs</p>
+                <ul>
+                  <li>WCP Swerve X driven by gears</li>
+                  <li>24 x 24 Drivetrain between swerves, with 6 inches of intake in front of the swerves</li>
+                  <li>Overall a 30 x 24 chassis</li>
+                </ul>
+                <h1>Autonomous</h1>
+                <p>
+                  Lyra's auto features include creating Autonomous Paths for compatibility with various robots, using Limelight for odometry tuning, Pathplanner for path simulation, and April tags for orientation. It can intake notes from different positions and follows a path for intaking and shooting.
+                </p>
+                <h1>TeleOp</h1>
+                <p>
+                  Lyra is capable of shooting into the speaker, amp, and hypothetically the trap, but as we’ve been developing our robot we decided to prioritize shooting on the speaker and the amp. Our intake hands off the note to the shooter, maximizing our efficiency to approximately 15 seconds between each scoring period into the speaker. 
+                </p>
               </div>
             </>
           )}
@@ -145,7 +156,21 @@ function HomePage() {
                 <h1>{roboTitle[0]}</h1>
               </div>
               <div className="bodyText">
-                <p>{roboText[0]}</p>
+                <h1>General</h1>
+                <p>Our beautiful beast, Lyra, weighs at 124.27 lbs</p>
+                <ul>
+                  <li>WCP Swerve X driven by gears</li>
+                  <li>24 x 24 Drivetrain between swerves, with 6 inches of intake in front of the swerves</li>
+                  <li>Overall a 30 x 24 chassis</li>
+                </ul>
+                <h1>Autonomous</h1>
+                <p>
+                  Lyra's auto features include creating Autonomous Paths for compatibility with various robots, using Limelight for odometry tuning, Pathplanner for path simulation, and April tags for orientation. It can intake notes from different positions and follows a path for intaking and shooting.
+                </p>
+                <h1>TeleOp</h1>
+                <p>
+                  Lyra is capable of shooting into the speaker, amp, and hypothetically the trap, but as we’ve been developing our robot we decided to prioritize shooting on the speaker and the amp. Our intake hands off the note to the shooter, maximizing our efficiency to approximately 15 seconds between each scoring period into the speaker. 
+                </p>
               </div>
             </>
           )}
@@ -164,7 +189,7 @@ function HomePage() {
               // setRobotImage(robot);
               // setRobotTitle(roboTitle[0]);
               // setRobotText(roboText[0]);
-              handleOnClick(robot, roboTitle[0], roboText[0], "back");
+              handleOnClick(robot, roboTitle[0], "back");
             }}
           />
         </div>
