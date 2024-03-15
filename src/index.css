@@ -160,6 +160,6 @@ input:hover{
   .right_card{
     flex-direction: column;
     width: 80%;
-    height: 80%
+    height: 100%
   }
 }
