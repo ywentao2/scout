@@ -170,7 +170,7 @@ input:hover{
   }
   .right_card{
     flex-direction: column;
-    width: 80%;
+    width: 100%;
     overflow: auto;
     min-height: 85%;
   }
