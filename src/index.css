@@ -11,6 +11,10 @@ html {
   padding: 0;
 }
 
+#root{
+  min-height: 100vh;
+}
+
 .topnav {
   position: fixed;
   top: 0;
@@ -21,12 +25,12 @@ html {
   display: flex;
   justify-content: start; /* Aligns items to the start, making room for the image on the left */
   align-items: center;
-  padding: 0px 10px;
+  padding: 0px 0.5em;
 }
 
 /* Style the image inside the navigation bar */
 .topnav img {
-  padding-left: 10px;
+  padding-left: 0.5em;
 }
 
 /* Style the links inside the navigation bar */
@@ -34,7 +38,7 @@ html {
   display: inline-block;
   color: #f2f2f2;
   text-align: center;
-  padding: 7px 16px;
+  padding: 0.3em 0.9em;
   text-decoration: none;
   font-size: 17px;
 }
