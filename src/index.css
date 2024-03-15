@@ -9,6 +9,7 @@ body,
 html {
   margin: 0;
   padding: 0;
+  min-height: 100vh;
 }
 
 #root{
@@ -158,6 +159,10 @@ input:hover{
 }
 
 @media (max-width: 768px) {
+  body,
+  html {
+    min-height: auto;
+  }
   .mid_align{
     flex-direction: column;
   }
