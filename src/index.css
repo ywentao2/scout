@@ -166,7 +166,8 @@ input:hover{
     min-height: 100%;
   }
   .img1{
-    width: 100%;
+    margin-top: 3em;
+    width: 80%;
     height: 100%;
     margin-left: 0;
   
