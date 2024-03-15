@@ -87,18 +87,18 @@ html {
 
 .right_card{
   background-color: #333; /* Light grey background */
-  margin-left: 20vh; /* Space between the image and the card */
-  margin-right: 15vh;
-  padding: 20px 2vh; 
+  margin-left: 10em; /* Space between the image and the card */
+  margin-right: 8em;
+  padding: 1em 1em; 
   width: 30%; /* Card width */
-  height: 700px; /* Card height, to match the image */
+  height: 80%; /* Card height, to match the image */
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Adds shadow for depth */
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
   text-align: center;
-  border-radius: 25px; /* Rounded corners */
+  border-radius: 2em; /* Rounded corners */
   position: relative;
   overflow: hidden;
 }
@@ -140,10 +140,10 @@ input:hover{
   text-align: left;
   align-self: flex-start;
   margin: 0px 0vh 0px 1vh;
-  text-indent: 2vh;
+  text-indent: 1em;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  width: calc(100% - 1vh);
+  width: calc(100% - 1%);
 }
 
 .back{
@@ -154,6 +154,9 @@ input:hover{
 }
 
 @media (max-width: 768px) {
+  .mid_align{
+    flex-direction: column;
+  }
   .right_card{
     flex-direction: column;
   }
