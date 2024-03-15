@@ -152,7 +152,6 @@ input:hover{
 }
 
 .back{
-  position: absolute;
   bottom: 0;
   left: 0;
   margin-bottom: 10px;
@@ -169,6 +168,6 @@ input:hover{
   .right_card{
     flex-direction: column;
     width: 80%;
-    height: 100%
+    overflow: auto;
   }
 }
