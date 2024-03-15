@@ -160,9 +160,11 @@ input:hover{
 @media (max-width: 768px) {
   body,
   html {
-    min-height: auto;
+    height: 100%;
+    min-height: 100%;
   }
   .mid_align{
+    min-height: 100%;
     flex-direction: column;
   }
   .right_card{
