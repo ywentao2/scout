@@ -129,6 +129,13 @@ input:hover{
   align-items: center;
 }
 
+.content{
+  align-items: left;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  width: calc(100% - 1vh);
+}
+
 .bodyText{
   text-align: left;
   align-self: flex-start;
@@ -144,4 +151,10 @@ input:hover{
   bottom: 0;
   left: 0;
   margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .right_card{
+    flex-direction: column;
+  }
 }

@@ -32,14 +32,18 @@ function HomePage() {
   const [robotImage, setRobotImage] = React.useState(robot);
   const [robotText, setRobotText] = React.useState(roboText[0]);
   const [robotTitle, setRobotTitle] = React.useState(roboTitle[0]);
-  const [buttonPressed , setButtonPressed] = React.useState("");
-  const handleOnClick = (image: string, title: string, text: string, button: string): void => {
-
+  const [buttonPressed, setButtonPressed] = React.useState("");
+  const handleOnClick = (
+    image: string,
+    title: string,
+    text: string,
+    button: string
+  ): void => {
     setRobotImage(image);
     setRobotTitle(title);
     setRobotText(text);
     setButtonPressed(button);
-  }
+  };
 
   return (
     <div className="App">
@@ -96,41 +100,45 @@ function HomePage() {
             />
           </div>
           {buttonPressed === "climber" && (
-          <>
-            <div className="title">
-              <h1>{roboTitle[1]}</h1>
-            </div>
-            <div className="bodyText">
-              <p>{roboText[1]}</p>
-            </div>
-          </>)}
+            <>
+              <div className="title">
+                <h1>{roboTitle[1]}</h1>
+              </div>
+              <div className="bodyText">
+                <p>{roboText[1]}</p>
+              </div>
+            </>
+          )}
           {buttonPressed === "intake" && (
-          <>
-            <div className="title">
-              <h1>{roboTitle[2]}</h1>
-            </div>
-            <div className="bodyText">
-              <p>{roboText[2]}</p>
-            </div>
-          </>)}
+            <>
+              <div className="title">
+                <h1>{roboTitle[2]}</h1>
+              </div>
+              <div className="bodyText">
+                <p>{roboText[2]}</p>
+              </div>
+            </>
+          )}
           {buttonPressed === "shooter" && (
-          <>
-            <div className="title">
-              <h1>{roboTitle[3]}</h1>
-            </div>
-            <div className="bodyText">
-              <p>{roboText[3]}</p>
-            </div>
-          </>)}
+            <>
+              <div className="title">
+                <h1>{roboTitle[3]}</h1>
+              </div>
+              <div className="bodyText">
+                <p>{roboText[3]}</p>
+              </div>
+            </>
+          )}
           {buttonPressed === "back" && (
-          <>
-            <div className="title">
-              <h1>{roboTitle[0]}</h1>
-            </div>
-            <div className="bodyText">
-              <p>{roboText[0]}</p>
-            </div>
-          </>)}
+            <>
+              <div className="title">
+                <h1>{roboTitle[0]}</h1>
+              </div>
+              <div className="bodyText">
+                <p>{roboText[0]}</p>
+              </div>
+            </>
+          )}
           {buttonPressed === "" && (
             <>
               <div className="title">
@@ -139,7 +147,7 @@ function HomePage() {
               <div className="bodyText">
                 <p>{roboText[0]}</p>
               </div>
-          </>
+            </>
           )}
           {/* <div className="title">
             <h1>{robotTitle}</h1>
