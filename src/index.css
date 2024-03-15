@@ -170,6 +170,6 @@ input:hover{
     flex-direction: column;
     width: 80%;
     overflow: auto;
-    min-height: 100%;
+    min-height: 70%;
   }
 }
