@@ -15,6 +15,7 @@ import shooter_close from "./shooter_close.png";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import { Link } from "react-router-dom";
 
+
 function HomePage() {
   const reader = new FileReader();
   const roboTitle = [
@@ -24,10 +25,10 @@ function HomePage() {
     "The Shooter",
   ];
   const roboText = [
-    "poppppoppppoppppoppppoppppoppppoppppoppppoppppoppppoppppoppppoppppoppppoppppoppppoppppoppp",
-    "eat",
-    "poop",
-    "cry",
+    "test0",
+    "test1",
+    "test2",
+    "test3"
   ];
   const [robotImage, setRobotImage] = React.useState(robot);
   const [robotTitle, setRobotTitle] = React.useState(roboTitle[0]);
@@ -41,6 +42,28 @@ function HomePage() {
     setRobotTitle(title);
     setButtonPressed(button);
   };
+
+  // function bodyText(){
+  //   return (
+  //     <div className="bodyText">
+  //             <h1>General</h1>
+  //               <p>Our beautiful beast, Lyra, weighs at 124.27 lbs</p>
+  //               <ul>
+  //                 <li>WCP Swerve X driven by gears</li>
+  //                 <li>24 x 24 Drivetrain between swerves, with 6 inches of intake in front of the swerves</li>
+  //                 <li>Overall a 30 x 24 chassis</li>
+  //               </ul>
+  //               <h1>Autonomous</h1>
+  //               <p>
+  //                 Lyra's auto features include creating Autonomous Paths for compatibility with various robots, using Limelight for odometry tuning, Pathplanner for path simulation, and April tags for orientation. It can intake notes from different positions and follows a path for intaking and shooting.
+  //               </p>
+  //               <h1>TeleOp</h1>
+  //               <p>
+  //                 Lyra is capable of shooting into the speaker, amp, and hypothetically the trap, but as we’ve been developing our robot we decided to prioritize shooting on the speaker and the amp. Our intake hands off the note to the shooter, maximizing our efficiency to approximately 15 seconds between each scoring period into the speaker. 
+  //               </p>
+  //             </div>
+  //   );
+  // }
 
   return (
     <div className="App">
@@ -102,7 +125,12 @@ function HomePage() {
                 <h1>{roboTitle[1]}</h1>
               </div>
               <div className="bodyText">
-                <p>{roboText[1]}</p>
+                <p className="climberText">Lyra's climber employs multiple old and new concepts to make a world-class climber, featuring: </p>
+                <ul>
+                  <li className="climberText">A telescoping system with a series of bars (3+) that are inset within one another and connected by a series of strings that force the bars in but can loosen to allow force springs to extend the smaller internal bars</li>
+                  <li className="climberText">A 2-bar arm utilizing one static bar with a mounted chain and a second moving bar guided along by a bearing "nest" to keep the bar in place. Ultimately, we decided on this due to its capability to be compact while also being far easier to repair than other options.</li>
+                  <li className="climberText">A "measuring tape" containing a spool at the bottom of the mechanism which releases a semi-rigid body with a hook at the end and can collapse back into itself to lift the robot</li>
+                </ul>
               </div>
             </>
           )}
@@ -112,7 +140,7 @@ function HomePage() {
                 <h1>{roboTitle[2]}</h1>
               </div>
               <div className="bodyText">
-                <p>{roboText[2]}</p>
+                <p className="intakeText">Lyra has an under-the-bumper intake that goes between our swerve modules. Our design has changed quite a bit throughout the season, with the newest additions being free-spinning PVC pipes inspired by 7072 (OGRE) and polycarbonate shields to protect the pathway of the note. A total of 5 rollers help guide the note exactly where it needs to be for the handoff to the shooter, making use of the note’s compression and fluidity to intake at such an ambitious angle.</p>
               </div>
             </>
           )}
@@ -122,7 +150,12 @@ function HomePage() {
                 <h1>{roboTitle[3]}</h1>
               </div>
               <div className="bodyText">
-                <p></p>
+                <p className="shooterText">The shooter was inspired by the FTC game <em>"Ultimate Goal"</em> with its use of rings as game pieces. Then, inspiration was taken from various international teams such as 3255, 7047, and 6328. The shooter then underwent many rounds of testing for the best design before being manufactured. The shooter now features:</p>
+                <ul>
+                  <li className="shooterText">Two sides that are each driven by a Kraken motor</li>
+                  <li className="shooterText">4” diameter Stealth and Colson wheels</li>
+                  <li className="shooterText">Belt indexer driven by Falcon 500 motors</li>
+                </ul>
               </div>
             </>
           )}
@@ -174,12 +207,6 @@ function HomePage() {
               </div>
             </>
           )}
-          {/* <div className="title">
-            <h1>{robotTitle}</h1>
-          </div>
-          <div className="bodyText">
-            <p>{robotText}</p>
-          </div> */}
           <input
             className="back"
             type="image"

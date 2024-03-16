@@ -157,6 +157,18 @@ input:hover{
   width: calc(100% - 1%);
 }
 
+.intakeText{
+  font-size: large;
+}
+
+.climberText{
+  font-size: large;
+}
+
+.shooterText{
+  font-size: large;
+}
+
 .back{
   bottom: 0;
   left: 0;
