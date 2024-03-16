@@ -193,7 +193,6 @@ input:hover{
     flex-direction: column;
   }
   .right_card{
-    align-self: start;
     flex-direction: column;
     width: 100%;
     overflow: auto;
