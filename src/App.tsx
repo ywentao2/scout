@@ -166,7 +166,7 @@ function HomePage() {
               </div>
               <div className="bodyText">
               <h1>General</h1>
-                <p>Our beautiful beast, Lyra, weighs at 124.27 lbs</p>
+                <p>Our beautiful beast, Lyra, weighs at 122 lbs</p>
                 <ul>
                   <li>WCP Swerve X driven by gears</li>
                   <li>24 x 24 Drivetrain between swerves, with 6 inches of intake in front of the swerves</li>
@@ -190,7 +190,7 @@ function HomePage() {
               </div>
               <div className="bodyText">
                 <h1>General</h1>
-                <p>Our beautiful beast, Lyra, weighs at 124.27 lbs</p>
+                <p>Our beautiful beast, Lyra, weighs at 122 lbs</p>
                 <ul>
                   <li>WCP Swerve X driven by gears</li>
                   <li>24 x 24 Drivetrain between swerves, with 6 inches of intake in front of the swerves</li>
