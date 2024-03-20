@@ -20,13 +20,13 @@ function HomePage() {
   const reader = new FileReader();
   const roboTitle = [
     "The 2024 Robot: Lyra",
-    "The Climber",
+    //"The Climber",
     "The Intake",
     "The Shooter",
   ];
   const roboText = [
     "test0",
-    "test1",
+    //"test1",
     "test2",
     "test3"
   ];
@@ -84,7 +84,7 @@ function HomePage() {
         <img className="img1" src={robotImage} alt="robot" />
         <div className="right_card">
           <div className="inputs">
-            <input
+            {/* <input
               type="image"
               src={climber_close}
               alt="The Climber"
@@ -94,7 +94,7 @@ function HomePage() {
                 // setRobotText(roboText[1]);
                 handleOnClick(climber, roboTitle[1], "climber");
               }}
-            />
+            /> */}
 
             <input
               type="image"
@@ -166,11 +166,12 @@ function HomePage() {
               </div>
               <div className="bodyText">
               <h1>General</h1>
-                <p>Our beautiful beast, Lyra, weighs at 122 lbs</p>
+                <p>Our beautiful beast, Lyra, weighs at 108 lbs</p>
                 <ul>
                   <li>WCP Swerve X driven by gears</li>
                   <li>24 x 24 Drivetrain between swerves, with 6 inches of intake in front of the swerves</li>
                   <li>Overall a 30 x 24 chassis</li>
+                  <li>Agile and employs a hockey-stop algorithm for effective breaking</li>
                 </ul>
                 <h1>Autonomous</h1>
                 <p>
@@ -178,7 +179,7 @@ function HomePage() {
                 </p>
                 <h1>TeleOp</h1>
                 <p>
-                  Lyra is capable of shooting into the speaker, amp, and hypothetically the trap, but as we’ve been developing our robot we decided to prioritize shooting on the speaker and the amp. Our intake hands off the note to the shooter, maximizing our efficiency to approximately 15 seconds between each scoring period into the speaker. 
+                  Lyra is capable of shooting into the speaker and amp, but as we’ve been developing our robot we decided to prioritize shooting on the speaker and the amp. Our intake hands off the note to the shooter, maximizing our efficiency to approximately 15 seconds between each scoring period into the speaker. 
                 </p>
               </div>
             </>
@@ -190,11 +191,12 @@ function HomePage() {
               </div>
               <div className="bodyText">
                 <h1>General</h1>
-                <p>Our beautiful beast, Lyra, weighs at 122 lbs</p>
+                <p>Our beautiful beast, Lyra, weighs at 108 lbs</p>
                 <ul>
                   <li>WCP Swerve X driven by gears</li>
                   <li>24 x 24 Drivetrain between swerves, with 6 inches of intake in front of the swerves</li>
                   <li>Overall a 30 x 24 chassis</li>
+                  <li>Agile and employs a hockey-stop algorithm for effective breaking</li>
                 </ul>
                 <h1>Autonomous</h1>
                 <p>
@@ -202,15 +204,14 @@ function HomePage() {
                 </p>
                 <h1>TeleOp</h1>
                 <p>
-                  Lyra is capable of shooting into the speaker, amp, and hypothetically the trap, but as we’ve been developing our robot we decided to prioritize shooting on the speaker and the amp. Our intake hands off the note to the shooter, maximizing our efficiency to approximately 15 seconds between each scoring period into the speaker. 
+                  Lyra is capable of shooting into the speaker and amp, but as we’ve been developing our robot we decided to prioritize shooting on the speaker and the amp. Our intake hands off the note to the shooter, maximizing our efficiency to approximately 15 seconds between each scoring period into the speaker. 
                 </p>
               </div>
             </>
           )}
           <input
             className="back"
-            type="image"
-            src={logo}
+            type="text"
             alt="back button"
             onClick={() => {
               // setRobotImage(robot);
