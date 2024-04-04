@@ -20,13 +20,13 @@ function HomePage() {
   const reader = new FileReader();
   const roboTitle = [
     "The 2024 Robot: Lyra",
-    //"The Climber",
+    "The Climber",
     "The Intake",
     "The Shooter",
   ];
   const roboText = [
     "test0",
-    //"test1",
+    "test1",
     "test2",
     "test3"
   ];
@@ -211,8 +211,9 @@ function HomePage() {
           )}
           <input
             className="back"
-            type="text"
+            type="image"
             alt="back button"
+            src={logo}
             onClick={() => {
               // setRobotImage(robot);
               // setRobotTitle(roboTitle[0]);
